@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> &middot; My New Hugoaaa Site</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://ChanningCh.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://ChanningCh.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://ChanningCh.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://ChanningCh.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://ChanningCh.github.io/"><h1>My New Hugoaaa Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://ChanningCh.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2023. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1></h1>
+  <time datetime=0001-01-01T00:00:00Z class="post-date">Mon, Jan 1, 0001</time>
+  <h1 id="hyde">Hyde</h1>
+<p>Hyde is a brazen two-column <a href="https://gohugo.io">hugo</a> theme based on the <a href="http://jekyllrb.com">Jekyll</a> theme of the same name.
+It pairs a prominent sidebar with uncomplicated content.</p>
+<p><img src="https://f.cloud.github.com/assets/98681/1831228/42af6c6a-7384-11e3-98fb-e0b923ee0468.png" alt="Hyde screenshot"></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#options">Options</a>
+<ul>
+<li><a href="#sidebar-menu">Sidebar menu</a></li>
+<li><a href="#sidebar-description">Sidebar description</a></li>
+<li><a href="#sticky-sidebar-content">Sticky sidebar content</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#reverse-layout">Reverse layout</a></li>
+<li><a href="#disqus">Disqus</a></li>
+<li><a href="#google-analytics">Google Analytics</a></li>
+</ul>
+</li>
+<li><a href="#author">Author</a></li>
+<li><a href="#ported-by">Ported by</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="quick-start">Quick Start</h3>
+<p>To give you a running start this installation puts a fully configured <a href="https://github.com/forestryio/hyde-hugo-starter">starter repo</a> into your Git account and sets it up in a content manager / CMS.</p>
+<p><em><a href="https://forestry.io">Forestry</a> Starter-Kit:</em></p>
+<p><a href="https://app.forestry.io/quick-start?repo=forestryio/hyde-hugo-starter&amp;provider=github&amp;engine=hugo&amp;version=0.49"><img src="https://assets.forestry.io/import-to-forestry.svg" alt="Import this project into Forestry"></a></p>
+<h3 id="standard-installation">Standard Installation</h3>
+<p>To install Hyde as your default theme, first install this repository in the <code>themes/</code> directory:</p>
+<pre><code>$ cd themes/
+$ git clone https://github.com/spf13/hyde.git
+</code></pre>
+<p>Second, specify <code>hyde</code> as your default theme in the <code>config.toml</code> file. Just add the line</p>
+<pre><code>theme = &quot;hyde&quot;
+</code></pre>
+<p>at the top of the file.</p>
+<h2 id="options">Options</h2>
+<p>Hyde includes some customizable options, typically applied via classes on the <code>&lt;body&gt;</code> element.</p>
+<h3 id="sidebar-menu">Sidebar menu</h3>
+<p>Create a list of nav links in the sidebar by assigning &ldquo;menu=main&rdquo; in the front matter, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">Menus</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">main</span> = [
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Github&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;https://github.com/username/&#34;</span>},
+</span></span><span style="display:flex;"><span>      {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;LinkedIn&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;https://www.linkedin.com/in/username/&#34;</span>}
+</span></span><span style="display:flex;"><span>  ]
+</span></span></code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Menus</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">main</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">Name</span>: <span style="color:#e6db74">&#34;Github&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">URL</span>: <span style="color:#e6db74">&#34;https://github.com/username/&#34;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">Name</span>: <span style="color:#e6db74">&#34;LinkedIn&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">URL</span>: <span style="color:#e6db74">&#34;https://www.linkedin.com/in/username/&#34;</span>
+</span></span></code></pre></div><h3 id="sidebar-description">Sidebar description</h3>
+<p>Customise the describe of your page using <code>description</code>, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Your custom description&#34;</span>
+</span></span></code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">description = &#34;Your custom description&#34;</span>
+</span></span></code></pre></div><h3 id="sticky-sidebar-content">Sticky sidebar content</h3>
+<p>By default Hyde ships with a sidebar that affixes it&rsquo;s content to the bottom of the sidebar. You can optionally disabled this by removing the <code>.sidebar-sticky</code> class from the sidebar&rsquo;s <code>.container</code>. Sidebar content will then normally flow from top to bottom.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Default sidebar --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sidebar&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container sidebar-sticky&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Modified sidebar --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sidebar&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h3 id="themes">Themes</h3>
+<p>Hyde ships with eight optional themes based on the <a href="https://github.com/chriskempson/base16">base16 color scheme</a>. Apply a theme to change the color scheme (mostly applies to sidebar and links).</p>
+<p><img src="https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png" alt="Hyde in red"></p>
+<p>There are eight themes available at this time.</p>
+<p><img src="https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png" alt="Hyde theme classes"></p>
+<p>To use a theme, add the <code>themeColor</code> variable under <code>params</code>, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">themeColor</span> = <span style="color:#e6db74">&#34;theme-base-09&#34;</span>
+</span></span></code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">themeColor</span>: <span style="color:#e6db74">&#34;theme-base-09&#34;</span>
+</span></span></code></pre></div><p>To create your own theme, look to the Themes section of <a href="https://github.com/poole/hyde/blob/master/public/css/hyde.css">included CSS file</a>. Copy any existing theme (they&rsquo;re only a few lines of CSS), rename it, and change the provided colors.</p>
+<h3 id="reverse-layout">Reverse layout</h3>
+<p><img src="https://f.cloud.github.com/assets/98681/1831230/42b0d3ac-7384-11e3-8d54-2065afd03f9e.png" alt="Hyde with reverse layout"></p>
+<p>To reverse page orientation, add the <code>layoutReverse</code> variable under <code>params</code>, like so:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">layoutReverse</span> = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#e6db74">&#34;hyde&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">layoutReverse</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="disqus">Disqus</h3>
+<p>You can optionally enable a comment system powered by Disqus for the posts. Simply add the variable <code>disqusShortname</code> to your config file.</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;spf13&#34;</span>
+</span></span></code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">disqusShortname </span>: <span style="color:#ae81ff">spf13</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>Note:</strong> Previous version 1.0 the Disqus shortname had to be defined inside the <code>[params]</code> block.</p>
+</blockquote>
+<h2 id="google-analytics">Google Analytics</h2>
+<p>Google Analytics can be enabled by assigning your tracking code to the <code>googleAnalytics</code> variable in the config file:</p>
+<p><strong>TOML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;Your tracking code&#34;</span>
+</span></span></code></pre></div><p><strong>YAML</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">googleAnalytics</span>: <span style="color:#ae81ff">Your tracking code</span>
+</span></span></code></pre></div><h2 id="author">Author</h2>
+<p><strong>Mark Otto</strong></p>
+<ul>
+<li><a href="https://github.com/mdo">https://github.com/mdo</a></li>
+<li><a href="https://twitter.com/mdo">https://twitter.com/mdo</a></li>
+</ul>
+<h2 id="ported-by">Ported By</h2>
+<p><strong>Steve Francia</strong></p>
+<ul>
+<li><a href="https://github.com/spf13">https://github.com/spf13</a></li>
+<li><a href="https://twitter.com/spf13">https://twitter.com/spf13</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p>Open sourced under the <a href="LICENSE.md">MIT license</a>.</p>
+<p>&lt;3</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
