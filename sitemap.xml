@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://ChanningCh.github.io/post/wlqj/</loc>
+    <loc>http://channingch.github.io/</loc>
+    <lastmod>2023-10-09T11:21:10+08:00</lastmod>
   </url><url>
-    <loc>http://ChanningCh.github.io/categories/</loc>
+    <loc>http://channingch.github.io/post/</loc>
+    <lastmod>2023-10-09T11:21:10+08:00</lastmod>
   </url><url>
-    <loc>http://ChanningCh.github.io/</loc>
+    <loc>http://channingch.github.io/post/versal%E7%B3%BB%E5%88%97%E5%BC%80%E5%8F%91%E4%B9%8B-noc/</loc>
+    <lastmod>2023-10-09T11:21:10+08:00</lastmod>
   </url><url>
-    <loc>http://ChanningCh.github.io/post/</loc>
+    <loc>http://channingch.github.io/about/</loc>
+    <lastmod>2023-10-09T10:49:13+08:00</lastmod>
   </url><url>
-    <loc>http://ChanningCh.github.io/tags/</loc>
+    <loc>http://channingch.github.io/categories/</loc>
+  </url><url>
+    <loc>http://channingch.github.io/tags/</loc>
   </url>
 </urlset>
