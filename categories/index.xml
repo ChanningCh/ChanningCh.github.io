@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on LNmint&#39;s Blog</title>
-    <link>http://localhost:2040/categories/</link>
+    <link>http://localhost:3719/categories/</link>
     <description>Recent content in Categories on LNmint&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Nov 2024 23:54:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:2040/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3719/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FPGA</title>
-      <link>http://localhost:2040/categories/fpga/</link>
+      <link>http://localhost:3719/categories/fpga/</link>
       <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
-      <guid>http://localhost:2040/categories/fpga/</guid>
+      <guid>http://localhost:3719/categories/fpga/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinese</title>
-      <link>http://localhost:2040/categories/chinese/</link>
+      <link>http://localhost:3719/categories/chinese/</link>
       <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
-      <guid>http://localhost:2040/categories/chinese/</guid>
+      <guid>http://localhost:3719/categories/chinese/</guid>
       <description></description>
     </item>
     <item>
       <title>Todo</title>
-      <link>http://localhost:2040/categories/todo/</link>
+      <link>http://localhost:3719/categories/todo/</link>
       <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      <guid>http://localhost:2040/categories/todo/</guid>
+      <guid>http://localhost:3719/categories/todo/</guid>
       <description></description>
     </item>
     <item>
       <title>Story</title>
-      <link>http://localhost:2040/categories/story/</link>
+      <link>http://localhost:3719/categories/story/</link>
       <pubDate>Fri, 14 Apr 2017 11:25:05 -0400</pubDate>
-      <guid>http://localhost:2040/categories/story/</guid>
+      <guid>http://localhost:3719/categories/story/</guid>
       <description></description>
     </item>
   </channel>

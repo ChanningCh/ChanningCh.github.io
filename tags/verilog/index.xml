@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Verilog on LNmint&#39;s Blog</title>
-    <link>http://localhost:2040/tags/verilog/</link>
+    <link>http://localhost:3719/tags/verilog/</link>
     <description>Recent content in Verilog on LNmint&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Dec 2024 23:23:37 +0800</lastBuildDate>
-    <atom:link href="http://localhost:2040/tags/verilog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3719/tags/verilog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于状态机</title>
-      <link>http://localhost:2040/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/</link>
+      <link>http://localhost:3719/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/</link>
       <pubDate>Wed, 11 Dec 2024 23:23:37 +0800</pubDate>
-      <guid>http://localhost:2040/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/</guid>
+      <guid>http://localhost:3719/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/</guid>
       <description>&lt;h1 id=&#34;关于状态机&#34;&gt;关于状态机&lt;/h1&gt;&#xA;&lt;p&gt;作为HDL的最基础知识，状态机无疑是非常重要的。&#xA;我们平时可能会碰到很多状态机，例如从简单的pattern检测，到PCIe的LTSSM，其实本质是一样的，好的状态机清晰明了，也是我们debug的利器；差的状态机各有千秋，可以让设计者落泪，也可以让使用者红温。&#xA;那么，如何写一个状态机呢？&lt;/p&gt;&#xA;&lt;p&gt;首先我们要明白为什么要有状态机。&#xA;答案很简单，为了顺序执行！&lt;/p&gt;&#xA;&lt;p&gt;如果没有状态机，我可以怎么写呢：&#xA;if （a）&#xA;else if（b）&#xA;else if （c）&#xA;是的，这样就完成了简单的顺序控制，b依赖a，c依赖b，一层一层传递，这样可以吗？当然可以！设计是为结果服务的，对于简单的设计来说，这就很明了了。但稍微复杂一点，这就不够看了，逻辑会越嵌套越多，并且他们之间都是耦合的！很容易出错！&lt;/p&gt;&#xA;&lt;p&gt;好了，我们介绍正经的状态机了。按照教科书的说法，一般状态机分为Moore状态机和Mealy状态机。&#xA;Moore状态机：输出仅仅与当前状态有关；&#xA;Mealy状态机：输出不仅取决于当前状态，还和输入有关；&#xA;好家伙，一上来就整两名词。但是这个更不重要，大多数情况下我们不需要研究我们写的是哪种。&lt;/p&gt;&#xA;&lt;p&gt;那么，最关键的，根据写法，我们可以概括为：&#xA;一段式&#xA;两段式&#xA;三段式&#xA;这才是真正简介，见文生义，且实用的命名！&lt;/p&gt;</description>
     </item>
   </channel>

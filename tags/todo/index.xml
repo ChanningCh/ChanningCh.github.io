@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Todo on LNmint&#39;s Blog</title>
-    <link>http://localhost:2040/tags/todo/</link>
+    <link>http://localhost:3719/tags/todo/</link>
     <description>Recent content in Todo on LNmint&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Mar 2018 02:01:58 +0530</lastBuildDate>
-    <atom:link href="http://localhost:2040/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3719/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(No comment) When You Have Too Much to Do</title>
-      <link>http://localhost:2040/posts/post-1/</link>
+      <link>http://localhost:3719/posts/post-1/</link>
       <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      <guid>http://localhost:2040/posts/post-1/</guid>
+      <guid>http://localhost:3719/posts/post-1/</guid>
       <description>&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;&#xA;&lt;p&gt;It all keeps piling up, and it can feel overwhelming.&lt;/p&gt;&#xA;&lt;p&gt;How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?&lt;/p&gt;</description>
     </item>
   </channel>
