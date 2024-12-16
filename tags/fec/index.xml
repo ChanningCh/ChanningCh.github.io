@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FEC on LNmint&#39;s Blog</title>
-    <link>http://localhost:3719/tags/fec/</link>
+    <link>http://localhost:5614/tags/fec/</link>
     <description>Recent content in FEC on LNmint&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Dec 2024 20:18:31 +0800</lastBuildDate>
-    <atom:link href="http://localhost:3719/tags/fec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5614/tags/fec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>几种纠错算法</title>
-      <link>http://localhost:3719/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
+      <link>http://localhost:5614/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
-      <guid>http://localhost:3719/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
-      <description>&lt;p&gt;纠错在计算机体系中非常常见, 在传输过程中以及存储过程中都有可能产生错误, 这其实非常常见。例如, 对于NAND Flash类型的存储介质(SD, EMMC, SSD等都属与这一类型), 通过在浮动栅极(floating gate)中存储电子来代表0和1, 在进行&lt;strong&gt;写&lt;/strong&gt;或&lt;strong&gt;擦除&lt;/strong&gt;等操作时, 电子会穿过浮动栅极, 而浮动栅极有个缺陷, 在电子反复穿过Floating Gate后, 电子存储的能力变弱, 那么所代表的0和1将不再可靠! 我们可以通过&lt;strong&gt;纠错算法&lt;/strong&gt;来保证数据正确, 或&lt;strong&gt;磨损平衡&lt;/strong&gt;的算法机制来提高整个存储介质的寿命和可靠性。当然我们这里不介绍&lt;strong&gt;磨损平衡。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;那么, 常用的纠错算法有哪些呢:&lt;/p&gt;&#xA;&lt;h2 id=&#34;ecc&#34;&gt;ECC&lt;/h2&gt;&#xA;&lt;p&gt;在正式介绍ECC之前, 我们先来看看Check Sum(校验和)。Check Sum是一种检错机制, 这个非常简单, 应用也非常广, 例如经典的UART协议中8bit数据后可以附1bit校验和, 分为奇校验和偶校验。&lt;/p&gt;&#xA;&lt;p&gt;在UART中Check Sum可以检查出8bit中的1bit误码。但这只是检错, 我们无法知道8bit中哪一个地址是错的。试想一下, 如果每1bit data都有1bit Check, 那就可以完成纠错了!&lt;/p&gt;&#xA;&lt;p&gt;但这样太傻了, 这不就相当于复制了一份吗, 效率直接砍了一半?&lt;/p&gt;&#xA;&lt;p&gt;那么ECC是怎么做的呢, 我们拿一张带ECC的内存条看看, 图中是一个带ECC的DDR内存条, 可以看到共使用了9个8bit位宽的SDRAM内存颗粒, 也就是总共72bit位宽, 其中64bit用于数据, 8bit用于ECC。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/1734358127693.png&#34; alt=&#34;1734358127693&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;ECC是如何用8bit来完成64bit数据的纠错的。这其实很好理解, 我们只需要知道是哪个bit出错, 那么8bit可以包含的地址信息就是2^8=64个。&lt;/p&gt;&#xA;&lt;p&gt;当然, 真正的ECC远不止这些, 要真正使用, 还需要考虑如何计算, 能否在和data同一拍时钟给Memory Controller, 怎么计算效率高, 用的资源少。我们先按下不表。&lt;/p&gt;&#xA;&lt;p&gt;那么基于上面的情况, 我们深入一下:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;有没有可能数据是对的, 但是Check Sum算错了呢!!!? 此时我该相信谁?&lt;/li&gt;&#xA;&lt;li&gt;那如果是2bit错误呢, 上述利用Check Sum就无能为力了。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;fec&#34;&gt;FEC&lt;/h2&gt;&#xA;&lt;p&gt;FEC也就是前向纠错,&lt;/p&gt;</description>
+      <guid>http://localhost:5614/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
+      <description>&lt;p&gt;纠错在计算机体系中非常常见, 在传输过程中以及存储过程中都有可能产生错误, 这其实非常常见。例如, 对于NAND Flash类型的存储介质(SD, EMMC, SSD等都属与这一类型), 通过在浮动栅极(floating gate)中存储电子来代表0和1, 在进行&lt;strong&gt;写&lt;/strong&gt;或&lt;strong&gt;擦除&lt;/strong&gt;等操作时, 电子会穿过浮动栅极, 而浮动栅极有个缺陷, 在电子反复穿过Floating Gate后, 电子存储的能力变弱, 那么所代表的0和1将不再可靠! 我们可以通过&lt;strong&gt;纠错算法&lt;/strong&gt;来保证数据正确, 或&lt;strong&gt;磨损平衡&lt;/strong&gt;的算法机制来提高整个存储介质的寿命和可靠性。当然我们这里不介绍&lt;strong&gt;磨损平衡。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;那么, 常用的纠错算法有哪些呢:&lt;/p&gt;&#xA;&lt;h2 id=&#34;ecc&#34;&gt;ECC&lt;/h2&gt;&#xA;&lt;p&gt;在正式介绍ECC之前, 我们先来看看Check Sum(校验和)。Check Sum是一种检错机制, 这个非常简单, 应用也非常广, 例如经典的UART协议中8bit数据后可以附1bit校验和, 分为奇校验和偶校验。&lt;/p&gt;&#xA;&lt;p&gt;在UART中Check Sum可以检查出8bit中的1bit误码。但这只是检错, 我们无法知道8bit中哪一个地址是错的。试想一下, 如果每1bit data都有1bit Check, 那就可以完成纠错了!&lt;/p&gt;&#xA;&lt;p&gt;但这样太傻了, 这不就相当于复制了一份吗, 效率直接砍了一半?&lt;/p&gt;&#xA;&lt;p&gt;那么ECC是怎么做的呢, 我们拿一张带ECC的内存条看看, 图中是一个带ECC的DDR内存条, 可以看到共使用了9个8bit位宽的SDRAM内存颗粒, 也就是总共72bit位宽, 其中64bit用于数据, 8bit用于ECC。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/1734358127693.png&#34; alt=&#34;1734358127693&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;ECC是如何用8bit来完成64bit数据的纠错的。这其实很好理解, 我们只需要知道是哪个bit出错, 那么8bit可以包含的地址信息就是2^8=64个。&lt;/p&gt;&#xA;&lt;p&gt;当然, 真正的ECC远不止这些, 要真正使用, 还需要考虑如何计算, 能否在和data同一拍时钟给Memory Controller, 怎么计算效率高, 用的资源少。我们先按下不表。&lt;/p&gt;&#xA;&lt;p&gt;那么基于上面的情况, 我们深入一下:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;有没有可能数据是对的, 但是Check Sum算错了呢!!!? 此时我该相信谁?&lt;/li&gt;&#xA;&lt;li&gt;那如果是2bit错误呢, 上述利用Check Sum就无能为力了。&lt;/li&gt;&#xA;&lt;li&gt;&lt;img src=&#34;image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/1734360742930.png&#34; alt=&#34;1734360742930&#34;&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;fec&#34;&gt;FEC&lt;/h2&gt;&#xA;&lt;p&gt;FEC也就是前向纠错,&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
