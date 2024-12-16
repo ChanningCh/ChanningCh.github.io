@@ -2,53 +2,199 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LNmint&#39;s Blog</title>
-    <link>https://channingch.github.io/</link>
+    <link>http://localhost:2040/</link>
     <description>Recent content on LNmint&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Wed, 20 Nov 2024 20:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2024 20:18:31 +0800</lastBuildDate>
     
-        <atom:link href="https://channingch.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:2040/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
-        <title>Posts</title>
-        <link>https://channingch.github.io/posts/mainpage/</link>
-        <pubDate>Wed, 20 Nov 2024 20:31:19 +0800</pubDate>
+        <title>几种纠错算法</title>
+        <link>http://localhost:2040/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
+        <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
         
-        <guid>https://channingch.github.io/posts/mainpage/</guid>
-        <description>LNmint&#39;s Blog https://channingch.github.io/posts/mainpage/ -&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;
-- https://channingch.github.io/posts/mainpage/ - This is a customized copyright.</description>
+        <guid>http://localhost:2040/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/ -&lt;p&gt;纠错在计算机体系中非常常见, 在传输过程中以及存储过程中都有可能产生错误, 这其实非常常见。例如, 对于NAND Flash类型的存储介质(SD, EMMC, SSD等都属与这一类型), 通过在浮动栅极(floating gate)中存储电子来代表0和1, 在进行&lt;strong&gt;写&lt;/strong&gt;或&lt;strong&gt;擦除&lt;/strong&gt;等操作时, 电子会穿过浮动栅极, 而浮动栅极有个缺陷, 在电子反复穿过Floating Gate后, 电子存储的能力变弱, 那么所代表的0和1将不再可靠! 我们可以通过&lt;strong&gt;纠错算法&lt;/strong&gt;来保证数据正确, 或&lt;strong&gt;磨损平衡&lt;/strong&gt;的算法机制来提高整个存储介质的寿命和可靠性。当然我们这里不介绍&lt;strong&gt;磨损平衡。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;那么, 常用的纠错算法有哪些呢:&lt;/p&gt;
+&lt;h2 id=&#34;ecc&#34;&gt;ECC&lt;/h2&gt;
+&lt;p&gt;在正式介绍ECC之前, 我们先来看看Check Sum(校验和)。Check Sum是一种检错机制, 这个非常简单, 应用也非常广, 例如经典的UART协议中8bit数据后可以附1bit校验和, 分为奇校验和偶校验。&lt;/p&gt;
+&lt;p&gt;在UART中Check Sum可以检查出8bit中的1bit误码。但这只是检错, 我们无法知道8bit中哪一个地址是错的。试想一下, 如果每1bit data都有1bit Check, 那就可以完成纠错了!&lt;/p&gt;
+&lt;p&gt;但这样太傻了, 这不就相当于复制了一份吗, 效率直接砍了一半?&lt;/p&gt;
+&lt;p&gt;那么ECC是怎么做的呢, 我们拿一张带ECC的内存条看看, 图中是一个带ECC的DDR内存条, 可以看到共使用了9个8bit位宽的SDRAM内存颗粒, 也就是总共72bit位宽, 其中64bit用于数据, 8bit用于ECC。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/1734358127693.png&#34; alt=&#34;1734358127693&#34;&gt;&lt;/p&gt;
+&lt;p&gt;ECC是如何用8bit来完成64bit数据的纠错的。这其实很好理解, 我们只需要知道是哪个bit出错, 那么8bit可以包含的地址信息就是2^8=64个。&lt;/p&gt;
+&lt;p&gt;当然, 真正的ECC远不止这些, 要真正使用, 还需要考虑如何计算, 能否在和data同一拍时钟给Memory Controller, 怎么计算效率高, 用的资源少。我们先按下不表。&lt;/p&gt;
+&lt;p&gt;那么基于上面的情况, 我们深入一下:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;有没有可能数据是对的, 但是Check Sum算错了呢!!!? 此时我该相信谁?&lt;/li&gt;
+&lt;li&gt;那如果是2bit错误呢, 上述利用Check Sum就无能为力了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;fec&#34;&gt;FEC&lt;/h2&gt;
+&lt;p&gt;FEC也就是前向纠错,&lt;/p&gt;
+- http://localhost:2040/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>关于状态机</title>
+        <link>http://localhost:2040/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/</link>
+        <pubDate>Wed, 11 Dec 2024 23:23:37 +0800</pubDate>
+        
+        <guid>http://localhost:2040/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/ -&lt;h1 id=&#34;关于状态机&#34;&gt;关于状态机&lt;/h1&gt;
+&lt;p&gt;作为HDL的最基础知识，状态机无疑是非常重要的。
+我们平时可能会碰到很多状态机，例如从简单的pattern检测，到PCIe的LTSSM，其实本质是一样的，好的状态机清晰明了，也是我们debug的利器；差的状态机各有千秋，可以让设计者落泪，也可以让使用者红温。
+那么，如何写一个状态机呢？&lt;/p&gt;
+&lt;p&gt;首先我们要明白为什么要有状态机。
+答案很简单，为了顺序执行！&lt;/p&gt;
+&lt;p&gt;如果没有状态机，我可以怎么写呢：
+if （a）
+else if（b）
+else if （c）
+是的，这样就完成了简单的顺序控制，b依赖a，c依赖b，一层一层传递，这样可以吗？当然可以！设计是为结果服务的，对于简单的设计来说，这就很明了了。但稍微复杂一点，这就不够看了，逻辑会越嵌套越多，并且他们之间都是耦合的！很容易出错！&lt;/p&gt;
+&lt;p&gt;好了，我们介绍正经的状态机了。按照教科书的说法，一般状态机分为Moore状态机和Mealy状态机。
+Moore状态机：输出仅仅与当前状态有关；
+Mealy状态机：输出不仅取决于当前状态，还和输入有关；
+好家伙，一上来就整两名词。但是这个更不重要，大多数情况下我们不需要研究我们写的是哪种。&lt;/p&gt;
+&lt;p&gt;那么，最关键的，根据写法，我们可以概括为：
+一段式
+两段式
+三段式
+这才是真正简介，见文生义，且实用的命名！&lt;/p&gt;
+- http://localhost:2040/posts/%E5%85%B3%E4%BA%8E%E7%8A%B6%E6%80%81%E6%9C%BA/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>PCIe结构</title>
+        <link>http://localhost:2040/posts/pcie%E7%BB%93%E6%9E%84/</link>
+        <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
+        
+        <guid>http://localhost:2040/posts/pcie%E7%BB%93%E6%9E%84/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/pcie%E7%BB%93%E6%9E%84/ -&lt;h1 id=&#34;pcie&#34;&gt;PCIe&lt;/h1&gt;
+&lt;p&gt;Source: Kindle&lt;/p&gt;
+&lt;h1 id=&#34;-本书总结&#34;&gt;📒 本书总结&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PCIE&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PCIe层级架构&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Untitled.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复位&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://adaptivesupport.amd.com/s/question/0D52E00006hpaAbSAI/pci-express-wake-and-perst?language=en_US&#34;&gt;https://adaptivesupport.amd.com/s/question/0D52E00006hpaAbSAI/pci-express-wake-and-perst?language=en_US&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;复位时序和最小复位时间&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;image.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;%25E4%25BC%2581%25E4%25B8%259A%25E5%25BE%25AE%25E4%25BF%25A1%25E6%2588%25AA%25E5%259B%25BE_16953606518991.png&#34; alt=&#34;企业微信截图_16953606518991.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Training&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在系统复位后，会自动进行链路训练，以达成以下目标：位锁定（Bit Lock）、字符锁定（Symbol Lock，Gen1 &amp;amp; Gen2 Only）、块锁定（Block Lock，Gen3 Only）、确定链路宽度（Link Width）、通道位置翻转（Lane Reversal）、信号极性翻转（Polarity Inversion）、确定链路的数据率（Data Rate）和通道对齐（Lane-to-Lane De-skew）等功能。&lt;/p&gt;
+&lt;p&gt;首先是&lt;strong&gt;位锁定（Bit Lock）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;前面的文章中提到过，PCIe总线采用了一种嵌入式时钟的机制，即发送端只向接收端发送数据信号，并不发送时钟信号（时钟信号隐藏在数据信号中）。接收端可以通过CDR（Clock and Data Recovery）逻辑将时钟从数据流中恢复出来，然后再用恢复出来的时钟对数据信号进行采样。当然，时钟恢复需要一定的时间，才能保证时钟信号与数据信号的相位对应关系符合要求。一旦CDR完成了时钟的恢复，我们就说PCIe总线完成了&lt;strong&gt;位锁定。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;字符锁定（Symbol Lock）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;完成了位锁定之后，只是能够准确地识别出数据流中的0和1，还是不知道发送的内容是个啥。对于Gen1&amp;amp;Gen2来说，采用的8b/10b编码，即传输的数据是以10bit为一个字符。LTSSM可以引导物理层相关逻辑通过识别COM（K28.5）等控制字符来确定每个字符的开始与结束为止，即&lt;strong&gt;字符锁定&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;链路宽度（Link Width）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由于PCIe允许将x1的PCIe卡插入x4、x8甚至是x16的PCIe插槽中。因此在链路训练与初始化过程中，相邻的两个PCIe设备需要相互通信来确定其支持的最大链路宽度。&lt;/p&gt;
+&lt;p&gt;**注：**实际上PCIe Spec还允许采用动态带宽的机制，即允许链路宽度和数据率动态调整，以实现降低功耗等功能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通道位置翻转（Lane Reversal）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有的时候两个PCIe设备的通道排列位置可能不太一致，PCIe Spec允许对默认的通道排列位置重新排列，如下图所示。但是，从大部分的PCIe设备（PCIe卡和插槽等）都是按照统一的标准实现的，一般不会出现这种情况，因此这一功能是&lt;strong&gt;可选的&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FAQ&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/u012158332/article/details/108902966&#34;&gt;https://blog.csdn.net/u012158332/article/details/108902966&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reveral lane&lt;/p&gt;
+&lt;p&gt;具体在Configuration阶段配置lane reversal,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Untitled%201.png&#34; alt=&#34;Untitled&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Polarity lane&lt;/p&gt;
+&lt;p&gt;具体在LTSSM的polling轮训阶段&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Polling:&lt;/p&gt;
+&lt;p&gt;这个阶段会进行train, bit对齐等。Polling.Active正式开始发送, 也就是所有lane会发送1024个TS1 order, 正常的话upstream/downstream都会收到连续的order, 那么就会进入config阶段&lt;/p&gt;
+&lt;h2 id=&#34;pcie测试&#34;&gt;PCIe测试&lt;/h2&gt;
+&lt;p&gt;需要考虑的因素&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;image/PCIe%E7%BB%93%E6%9E%84/1734344534379.png&#34; alt=&#34;1734344534379&#34;&gt;&lt;/p&gt;
+- http://localhost:2040/posts/pcie%E7%BB%93%E6%9E%84/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>ChipScoPy使用</title>
+        <link>http://localhost:2040/posts/chipscopy%E4%BD%BF%E7%94%A8/</link>
+        <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
+        
+        <guid>http://localhost:2040/posts/chipscopy%E4%BD%BF%E7%94%A8/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/chipscopy%E4%BD%BF%E7%94%A8/ -&lt;h1 id=&#34;-chipscopy-readme&#34;&gt;🐍 ChipScoPy README&lt;/h1&gt;
+&lt;p&gt;ChipScoPy is an open-source project from Xilinx® that enables high-level control of Versal debug IP running in hardware.&lt;/p&gt;
+&lt;p&gt;Using a simple Python API, developers can control and communicate with ChipScope® debug IP such as the Integrated Logic&lt;/p&gt;
+&lt;p&gt;Analyzer (ILA), Virtual IO (VIO), device memory access, and more.&lt;/p&gt;
+&lt;p&gt;ChipScoPy communicates with Versal devices. It does not work with older devices such as Ultrascale+ and 7-Series devices.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Xilinx/chipscopy/master/docs/images/chipscopy_overview.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://xilinx.github.io/chipscopy/2023.1/overview.html&#34;&gt;ChipScoPy Overview&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://xilinx.github.io/chipscopy/2023.1/system_requirements.html&#34;&gt;System Requirements&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://xilinx.github.io/chipscopy/2023.1/chipscopy_installation.html&#34;&gt;ChipScoPy Installation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Xilinx/chipscopy/tree/master/chipscopy/examples&#34;&gt;ChipScoPy Examples&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Xilinx/chipscopy/blob/master/FAQ.md&#34;&gt;FAQ&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://xilinx.github.io/chipscopy/&#34;&gt;API Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+- http://localhost:2040/posts/chipscopy%E4%BD%BF%E7%94%A8/ - </description>
         </item>
     
     
     
         <item>
         <title>中文文本测试</title>
-        <link>https://channingch.github.io/posts/chinese/</link>
+        <link>http://localhost:2040/posts/chinese/</link>
         <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
         
-        <guid>https://channingch.github.io/posts/chinese/</guid>
-        <description>LNmint&#39;s Blog https://channingch.github.io/posts/chinese/ -&lt;p&gt;　　这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。 这样看来， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 一般来讲，我们都必须务必慎重的考虑考虑。 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 我们不得不面对一个非常尴尬的事实，那就是， 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。&lt;/p&gt;
+        <guid>http://localhost:2040/posts/chinese/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/chinese/ -&lt;p&gt;　　这样看来， 邓拓在不经意间这样说过，越是没有本领的就越加自命不凡。这不禁令我深思。 我们不得不面对一个非常尴尬的事实，那就是， 一般来说， 所谓中午吃什么，关键是中午吃什么需要如何写。 伏尔泰说过一句富有哲理的话，坚持意志伟大的事业需要始终不渝的精神。这启发了我， 那么， 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。 这样看来， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 一般来讲，我们都必须务必慎重的考虑考虑。 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 我们不得不面对一个非常尴尬的事实，那就是， 既然如何， 在这种困难的抉择下，本人思来想去，寝食难安。&lt;/p&gt;
 &lt;p&gt;　　我认为， 而这些并不是完全重要，更加重要的问题是， 了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。 中午吃什么因何而发生？ 而这些并不是完全重要，更加重要的问题是， 卢梭在不经意间这样说过，浪费时间是一桩大罪过。这启发了我， 既然如此， 从这个角度来看， 歌德在不经意间这样说过，意志坚强的人能把世界放在手中像泥块一样任意揉捏。我希望诸位也能好好地体会这句话。 我认为， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 莎士比亚在不经意间这样说过，人的一生是短的，但如果卑劣地过这一生，就太长了。带着这句话，我们还要更加慎重的审视这个问题： 带着这些问题，我们来审视一下中午吃什么。 中午吃什么因何而发生？ 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 布尔沃曾经说过，要掌握书，莫被书掌握；要为生而读，莫为读而生。这似乎解答了我的疑惑。 而这些并不是完全重要，更加重要的问题是， 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 带着这些问题，我们来审视一下中午吃什么。 生活中，若中午吃什么出现了，我们就不得不考虑它出现了的事实。 我认为， 一般来说， 中午吃什么，到底应该如何实现。 我们不得不面对一个非常尴尬的事实，那就是， 所谓中午吃什么，关键是中午吃什么需要如何写。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 现在，解决中午吃什么的问题，是非常非常重要的。&lt;/p&gt;
 &lt;p&gt;　　我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 带着这些问题，我们来审视一下中午吃什么。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我认为， 问题的关键究竟为何？ 非洲曾经提到过，最灵繁的人也看不见自己的背脊。这启发了我， 易卜生说过一句富有哲理的话，伟大的事业，需要决心，能力，组织和责任感。这似乎解答了我的疑惑。 一般来说， 在这种困难的抉择下，本人思来想去，寝食难安。 中午吃什么，到底应该如何实现。 经过上述讨论， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 中午吃什么因何而发生？
 带着这些问题，我们来审视一下中午吃什么。 对我个人而言，中午吃什么不仅仅是一个重大的事件，还可能会改变我的人生。&lt;/p&gt;
-- https://channingch.github.io/posts/chinese/ - This is a customized copyright.</description>
+- http://localhost:2040/posts/chinese/ - </description>
         </item>
     
     
     
         <item>
         <title>Typography - Test for features</title>
-        <link>https://channingch.github.io/posts/post-5/</link>
+        <link>http://localhost:2040/posts/post-5/</link>
         <pubDate>Sun, 18 Mar 2018 12:13:38 +0530</pubDate>
         
-        <guid>https://channingch.github.io/posts/post-5/</guid>
-        <description>LNmint&#39;s Blog https://channingch.github.io/posts/post-5/ -&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
+        <guid>http://localhost:2040/posts/post-5/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/post-5/ -&lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
 &lt;p&gt;Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.&lt;/p&gt;
 &lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
@@ -100,18 +246,18 @@
 &lt;li&gt;Green&lt;/li&gt;
 &lt;li&gt;Blue&lt;/li&gt;
 &lt;/ol&gt;
-- https://channingch.github.io/posts/post-5/ - This is a customized copyright.</description>
+- http://localhost:2040/posts/post-5/ - </description>
         </item>
     
     
     
         <item>
         <title>(No comment) When You Have Too Much to Do</title>
-        <link>https://channingch.github.io/posts/post-1/</link>
+        <link>http://localhost:2040/posts/post-1/</link>
         <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
         
-        <guid>https://channingch.github.io/posts/post-1/</guid>
-        <description>LNmint&#39;s Blog https://channingch.github.io/posts/post-1/ -&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;
+        <guid>http://localhost:2040/posts/post-1/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/post-1/ -&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;
 &lt;p&gt;It all keeps piling up, and it can feel overwhelming.&lt;/p&gt;
 &lt;p&gt;How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?&lt;/p&gt;
 &lt;p&gt;In this primer, I’ll look at some key strategies and tactics for taking on an overloaded life with an open heart, lots of energy, and a smile on your face.&lt;/p&gt;
@@ -145,18 +291,18 @@
 &lt;p&gt;Think of it as a settling of the mind. A new mode of being. A mindfulness practice (which means you won’t be perfect at it).&lt;/p&gt;
 &lt;p&gt;As you practice mindful focus, you’ll learn to practice doing things with an open heart, with curiosity and gratitude, and even joy. Try these one at a time as you get to do each task on your Short List.&lt;/p&gt;
 &lt;p&gt;You’ll find that you’re not so overloaded, but that each task is just perfect for that moment. And that’s a completely new relationship with the work that you do, and a new relationship with life.&lt;/p&gt;
-- https://channingch.github.io/posts/post-1/ - This is a customized copyright.</description>
+- http://localhost:2040/posts/post-1/ - </description>
         </item>
     
     
     
         <item>
         <title>Chapter VI: Esmeralda</title>
-        <link>https://channingch.github.io/posts/chapter-6/</link>
+        <link>http://localhost:2040/posts/chapter-6/</link>
         <pubDate>Fri, 14 Apr 2017 11:25:05 -0400</pubDate>
         
-        <guid>https://channingch.github.io/posts/chapter-6/</guid>
-        <description>LNmint&#39;s Blog https://channingch.github.io/posts/chapter-6/ -&lt;p&gt;We are delighted to be able to inform the reader, that during the whole of
+        <guid>http://localhost:2040/posts/chapter-6/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/chapter-6/ -&lt;p&gt;We are delighted to be able to inform the reader, that during the whole of
 this scene, Gringoire and his piece had stood firm. His actors, spurred on
 by him, had not ceased to spout his comedy, and he had not ceased to
 listen to it. He had made up his mind about the tumult, and was determined
@@ -225,18 +371,18 @@ an apothecary! It is true that Homerus begged through the Greek towns, and
 that Naso died in exile among the Muscovites. But may the devil flay me if
 I understand what they mean with their Esmeralda! What is that word, in
 the first place?—‘tis Egyptian!”&lt;/p&gt;
-- https://channingch.github.io/posts/chapter-6/ - This is a customized copyright.</description>
+- http://localhost:2040/posts/chapter-6/ - </description>
         </item>
     
     
     
         <item>
         <title>Chapter I: The Grand Hall</title>
-        <link>https://channingch.github.io/posts/chapter-1/</link>
+        <link>http://localhost:2040/posts/chapter-1/</link>
         <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
         
-        <guid>https://channingch.github.io/posts/chapter-1/</guid>
-        <description>LNmint&#39;s Blog https://channingch.github.io/posts/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
+        <guid>http://localhost:2040/posts/chapter-1/</guid>
+        <description>LNmint&#39;s Blog http://localhost:2040/posts/chapter-1/ -&lt;p&gt;Three hundred and forty-eight years, six months, and nineteen days ago
 to-day, the Parisians awoke to the sound of all the bells in the triple
 circuit of the city, the university, and the town ringing a full peal.&lt;/p&gt;
 &lt;p&gt;The sixth of January, 1482, is not, however, a day of which history has
@@ -302,8 +448,10 @@ buffet of an archer, or the horse of one of the provost’s sergeants, which
 kicked to restore order; an admirable tradition which the provostship has
 bequeathed to the constablery, the constablery to the &lt;em&gt;maréchaussée&lt;/em&gt;,
 the &lt;em&gt;maréchaussée&lt;/em&gt; to our &lt;em&gt;gendarmeri&lt;/em&gt; of Paris.&lt;/p&gt;
-- https://channingch.github.io/posts/chapter-1/ - This is a customized copyright.</description>
+- http://localhost:2040/posts/chapter-1/ - </description>
         </item>
+    
+    
     
     
   </channel>

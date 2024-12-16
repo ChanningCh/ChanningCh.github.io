@@ -2,53 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on LNmint&#39;s Blog</title>
-    <link>https://channingch.github.io/tags/</link>
+    <link>http://localhost:2040/tags/</link>
     <description>Recent content in Tags on LNmint&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>This is a customized copyright.</copyright>
-    <lastBuildDate>Thu, 14 Nov 2019 11:25:05 -0400</lastBuildDate>
-    <atom:link href="https://channingch.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Dec 2024 20:18:31 +0800</lastBuildDate>
+    <atom:link href="http://localhost:2040/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECC</title>
+      <link>http://localhost:2040/tags/ecc/</link>
+      <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
+      <guid>http://localhost:2040/tags/ecc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FEC</title>
+      <link>http://localhost:2040/tags/fec/</link>
+      <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
+      <guid>http://localhost:2040/tags/fec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>算法</title>
+      <link>http://localhost:2040/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
+      <guid>http://localhost:2040/tags/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>纠错</title>
+      <link>http://localhost:2040/tags/%E7%BA%A0%E9%94%99/</link>
+      <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
+      <guid>http://localhost:2040/tags/%E7%BA%A0%E9%94%99/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Verilog</title>
+      <link>http://localhost:2040/tags/verilog/</link>
+      <pubDate>Wed, 11 Dec 2024 23:23:37 +0800</pubDate>
+      <guid>http://localhost:2040/tags/verilog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Note</title>
+      <link>http://localhost:2040/tags/note/</link>
+      <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
+      <guid>http://localhost:2040/tags/note/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:2040/tags/tech/</link>
+      <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
+      <guid>http://localhost:2040/tags/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChipScoPy</title>
+      <link>http://localhost:2040/tags/chipscopy/</link>
+      <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
+      <guid>http://localhost:2040/tags/chipscopy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FPGA</title>
+      <link>http://localhost:2040/tags/fpga/</link>
+      <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
+      <guid>http://localhost:2040/tags/fpga/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xilinx</title>
+      <link>http://localhost:2040/tags/xilinx/</link>
+      <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
+      <guid>http://localhost:2040/tags/xilinx/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Chinese</title>
-      <link>https://channingch.github.io/tags/chinese/</link>
+      <link>http://localhost:2040/tags/chinese/</link>
       <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
-      <guid>https://channingch.github.io/tags/chinese/</guid>
+      <guid>http://localhost:2040/tags/chinese/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>https://channingch.github.io/tags/text/</link>
+      <link>http://localhost:2040/tags/text/</link>
       <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
-      <guid>https://channingch.github.io/tags/text/</guid>
+      <guid>http://localhost:2040/tags/text/</guid>
       <description></description>
     </item>
     <item>
       <title>Typography</title>
-      <link>https://channingch.github.io/tags/typography/</link>
+      <link>http://localhost:2040/tags/typography/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:38 +0530</pubDate>
-      <guid>https://channingch.github.io/tags/typography/</guid>
+      <guid>http://localhost:2040/tags/typography/</guid>
       <description></description>
     </item>
     <item>
       <title>Primer</title>
-      <link>https://channingch.github.io/tags/primer/</link>
+      <link>http://localhost:2040/tags/primer/</link>
       <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      <guid>https://channingch.github.io/tags/primer/</guid>
+      <guid>http://localhost:2040/tags/primer/</guid>
       <description></description>
     </item>
     <item>
       <title>Todo</title>
-      <link>https://channingch.github.io/tags/todo/</link>
+      <link>http://localhost:2040/tags/todo/</link>
       <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      <guid>https://channingch.github.io/tags/todo/</guid>
+      <guid>http://localhost:2040/tags/todo/</guid>
       <description></description>
     </item>
     <item>
       <title>Scene</title>
-      <link>https://channingch.github.io/tags/scene/</link>
+      <link>http://localhost:2040/tags/scene/</link>
       <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
-      <guid>https://channingch.github.io/tags/scene/</guid>
+      <guid>http://localhost:2040/tags/scene/</guid>
       <description></description>
     </item>
   </channel>

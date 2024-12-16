@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FPGA on LNmint&#39;s Blog</title>
+    <link>http://localhost:2040/categories/fpga/</link>
+    <description>Recent content in FPGA on LNmint&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Nov 2024 23:54:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:2040/categories/fpga/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChipScoPy使用</title>
+      <link>http://localhost:2040/posts/chipscopy%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
+      <guid>http://localhost:2040/posts/chipscopy%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;h1 id=&#34;-chipscopy-readme&#34;&gt;🐍 ChipScoPy README&lt;/h1&gt;&#xA;&lt;p&gt;ChipScoPy is an open-source project from Xilinx® that enables high-level control of Versal debug IP running in hardware.&lt;/p&gt;&#xA;&lt;p&gt;Using a simple Python API, developers can control and communicate with ChipScope® debug IP such as the Integrated Logic&lt;/p&gt;&#xA;&lt;p&gt;Analyzer (ILA), Virtual IO (VIO), device memory access, and more.&lt;/p&gt;&#xA;&lt;p&gt;ChipScoPy communicates with Versal devices. It does not work with older devices such as Ultrascale+ and 7-Series devices.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Xilinx/chipscopy/master/docs/images/chipscopy_overview.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://xilinx.github.io/chipscopy/2023.1/overview.html&#34;&gt;ChipScoPy Overview&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
