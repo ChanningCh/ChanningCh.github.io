@@ -1,0 +1,91 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
+
+baseURL = "https://channingch.github.io/"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "LNmint's Blog"
+theme = "blowfish"
+
+pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+
+enableRobotsTXT = true
+summaryLength = 0
+
+buildDrafts = false
+buildFuture = false
+
+enableEmoji = true
+
+#Google Analytics
+googleAnalytics = "G-Y4N17Z4JY3"
+
+# Microsoft Clarity (https://clarity.microsoft.com/) is a free user behavior recording and analytics tool
+clarity = "p1ssq1xyaq"
+
+# Please visit https://giscus.app/ to generate settings.
+[params.giscus]
+data_repo = "ChanningCh/ChanningCh.github.io"
+data-repo-id = "R_kgDOKdLDTA"
+data_category = "General"
+data-category-id = "DIC_kwDOKdLDTM4CkdnO"
+data_mapping = "pathname"
+data_strict = "0"
+data_reactions_enabled = "1"
+data_emit_metadata = "0"
+data_input_position = "bottom"
+data_theme = "preferred_color_scheme"
+data_lang = "en"
+crossorigin = "anonymous"
+
+
+[pagination]
+pagerSize = 100
+
+[imaging]
+anchor = 'Center'
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"
+series = "series"
+
+[sitemap]
+changefreq = 'daily'
+filename = 'sitemap.xml'
+priority = 0.5
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[related]
+threshold = 0
+toLower = false
+
+[[related.indices]]
+name = "tags"
+weight = 100
+
+[[related.indices]]
+name = "categories"
+weight = 100
+
+[[related.indices]]
+name = "series"
+weight = 50
+
+[[related.indices]]
+name = "authors"
+weight = 20
+
+[[related.indices]]
+name = "date"
+weight = 10
+
+[[related.indices]]
+applyFilter = false
+name = 'fragmentrefs'
+type = 'fragments'
+weight = 10
