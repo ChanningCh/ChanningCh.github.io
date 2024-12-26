@@ -22,12 +22,12 @@ disableImageOptimization = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "author_logo.png" # used as default for background images 
-defaultFeaturedImage = "author_logo.png" # used as default for featured images in all articles
+defaultBackgroundImage = "img/background.svg" # used as default for background images 
+defaultFeaturedImage = "img/featured.svg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
+smartTOCHideUnfocusedChildren = false
 
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
@@ -46,7 +46,7 @@ showScrollToTop = true
 layout = "background" # valid options: page, profile, hero, card, background, custom
 homepageImage = "img/background.jpg" # used in: hero, and card
 showRecent = true
-showRecentItems = 15
+showRecentItems = 6
 showMoreLink = true
 showMoreLinkDest = "/posts/"
 cardView = true
@@ -62,7 +62,7 @@ showDateUpdated = false
 showAuthor = true
 showAuthorBottom = true
 showHero = true
-# heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true        # only used when heroStyle equals background or thumbAndBackground
 layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
 showBreadcrumbs = false
@@ -75,7 +75,7 @@ showHeadingAnchors = true
 showPagination = true
 invertPagination = false
 showReadingTime = true
-showTableOfContents = false
+showTableOfContents = true
 showRelatedContent = true
 relatedContentLimit = 3
 showTaxonomies = true
@@ -87,7 +87,7 @@ showComments = true
 
 [list]
 showHero = false
-# heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true        # only used when heroStyle equals background or thumbAndBackground
 layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
 showBreadcrumbs = false
@@ -108,7 +108,7 @@ excludedKinds = ["taxonomy", "term"]
 [taxonomy]
 showTermCount = true
 showHero = false
-# heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
 showBreadcrumbs = false
 showViews = false
 showLikes = false
@@ -117,11 +117,11 @@ cardView = false
 
 [term]
 showHero = false
-# heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
 showBreadcrumbs = false
 showViews = false
 showLikes = false
-showTableOfContents = true
+showTableOfContents = false
 groupByYear = false
 cardView = false
 cardViewScreenWidth = false

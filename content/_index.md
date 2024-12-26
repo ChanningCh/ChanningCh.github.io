@@ -1,6 +1,30 @@
 ---
-title: "欢迎来到LNmint的博客"
-description: "一个分享IC/FPGA/编程/硬件等原创内容的博客"
+title: "欢迎访问LNmint的博客"
+draft: false
+description: "Blog Homepage"
+slug: "users"
+tags: ["users", "sample"]
+showDate: false
+showAuthor: false
+showReadingTime: false
+showEdit: false
+layoutBackgroundHeaderSpace: false
+cardViewScreenWidth: false
 ---
-一个分享IC/FPGA/编程/硬件等原创内容的博客
-![1734886522897](image/_index/1734886522897.png)
+欢迎访问LNmint的博客
+
+本博客是作者随笔, 不做内容搬运工, 是工作经验的总结和提炼
+
+***Wisdom***谈不上, 希望给你带来 ***Knowledge***
+
+包括 `IC`/`FPGA`/`Software`/`Hardware`等的原创内容
+
+</BR>
+
+{{< alert >}}
+
+**版权申明** 如需转载请注明出处。
+
+{{</ alert >}}
+
+![1734886522897](img/waves_1.svg)

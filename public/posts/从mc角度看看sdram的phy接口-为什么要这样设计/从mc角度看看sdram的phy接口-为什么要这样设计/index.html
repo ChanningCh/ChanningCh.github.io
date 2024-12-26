@@ -88,7 +88,7 @@
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Posts",
+    "articleSection": "Annual Blog Archive",
     "name": "从MC角度看看SDRAM的PHY接口-为什么要这样设计",
     "headline": "从MC角度看看SDRAM的PHY接口-为什么要这样设计",
     
@@ -511,7 +511,7 @@
             
   <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="">
+    <p class="text-base font-medium" title="Annual Blog Archive">
         Posts
     </p>
 </a>
@@ -522,7 +522,7 @@
             
   <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="">
+    <p class="text-base font-medium" title="Tags">
         Tags
     </p>
 </a>
@@ -534,7 +534,7 @@
   <div>
   <div class="cursor-pointer flex items-center nested-menu">
     
-    <a  href="/categories/"   class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="">
+    <a  href="/categories/"   class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="Categories">
       Categories
     </a>
     <span>
@@ -577,7 +577,7 @@
 
           </span>
           
-          <p class="text-sm font-sm" title="">
+          <p class="text-sm font-sm" title="Categories">
             IC/FPGA
           </p>
         </a>
@@ -596,7 +596,7 @@
 
           </span>
           
-          <p class="text-sm font-sm" title="">
+          <p class="text-sm font-sm" title="Categories">
             RTL/Verilog/SV
           </p>
         </a>
@@ -614,7 +614,7 @@
 
           </span>
           
-          <p class="text-sm font-sm" title="">
+          <p class="text-sm font-sm" title="Categories">
             IP/OpenSource
           </p>
         </a>
@@ -633,7 +633,7 @@
 
           </span>
           
-          <p class="text-sm font-sm" title="">
+          <p class="text-sm font-sm" title="Categories">
             Hardware
           </p>
         </a>
@@ -651,7 +651,7 @@
 
           </span>
           
-          <p class="text-sm font-sm" title="">
+          <p class="text-sm font-sm" title="Categories">
             Debug
           </p>
         </a>
@@ -670,7 +670,7 @@
 
           </span>
           
-          <p class="text-sm font-sm" title="">
+          <p class="text-sm font-sm" title="Categories">
             Tools
           </p>
         </a>
@@ -819,7 +819,7 @@
   <li class="mt-1">
     <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
+        <p class="text-bg font-bg" title="Annual Blog Archive">
             Posts
         </p>
     </a>
@@ -834,7 +834,7 @@
   <li class="mt-1">
     <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
+        <p class="text-bg font-bg" title="Tags">
             Tags
         </p>
     </a>
@@ -849,7 +849,7 @@
   <li class="mt-1">
     <a href="/categories/" class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
+        <p class="text-bg font-bg" title="Categories">
             Categories
         </p>
         <span>
@@ -891,7 +891,7 @@
 
         </span>
         
-        <p class="text-sm font-small" title="">
+        <p class="text-sm font-small" title="Categories">
             IC/FPGA
         </p>
     </a>
@@ -912,7 +912,7 @@
 
         </span>
         
-        <p class="text-sm font-small" title="">
+        <p class="text-sm font-small" title="Categories">
             RTL/Verilog/SV
         </p>
     </a>
@@ -932,7 +932,7 @@
 
         </span>
         
-        <p class="text-sm font-small" title="">
+        <p class="text-sm font-small" title="Categories">
             IP/OpenSource
         </p>
     </a>
@@ -953,7 +953,7 @@
 
         </span>
         
-        <p class="text-sm font-small" title="">
+        <p class="text-sm font-small" title="Categories">
             Hardware
         </p>
     </a>
@@ -973,7 +973,7 @@
 
         </span>
         
-        <p class="text-sm font-small" title="">
+        <p class="text-sm font-small" title="Categories">
             Debug
         </p>
     </a>
@@ -994,7 +994,7 @@
 
         </span>
         
-        <p class="text-sm font-small" title="">
+        <p class="text-sm font-small" title="Categories">
             Tools
         </p>
     </a>
@@ -1053,11 +1053,17 @@
   
   
   
- 
-  
-   
-  
- 
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+
 
   
   
@@ -1724,7 +1730,7 @@ DDR
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-21T09:34:53&#43;08:00">21 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>63 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-11-21T09:34:53&#43;08:00">21 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>64 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -1831,7 +1837,7 @@ DDR
   
   
 
-  <a href="/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/" class="min-w-full">
+  <a href="/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
       <meta property="og:image" content="http://localhost:1313/images/cover/DDR-stack-device-layout-with-SEC-DED-code-8b-data-5b-ECC-or-DEC-TED-16b-data-10b-ECC.png" />
@@ -1840,7 +1846,7 @@ DDR
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/">几种纠错算法</div>
+          href="/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/">几种纠错算法</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1900,7 +1906,7 @@ DDR
       
     
   
-  <span id="views_posts\几种纠错算法\几种纠错算法.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span id="views_posts\几种纠错算法\image\几种纠错算法.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
   <span class="inline-block align-text-bottom">
 
   <span class="relative block icon">
@@ -1922,7 +1928,7 @@ DDR
       
     
   
-  <span id="likes_posts\几种纠错算法\几种纠错算法.md"
+  <span id="likes_posts\几种纠错算法\image\几种纠错算法.md"
     class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
     title="likes">loading</span>
   <span class="inline-block align-text-bottom">
@@ -2197,7 +2203,7 @@ DDR
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/">
+            <a class="flex group mr-3" href="/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/image/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2221,6 +2227,28 @@ DDR
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/axi%E6%80%BB%E7%BA%BF/axi%E6%80%BB%E7%BA%BF/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >AXI总线</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-12-24T20:08:47&#43;08:00">24 December 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
@@ -2263,20 +2291,6 @@ DDR
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
-    
-    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
-      <ul class="flex flex-col list-none sm:flex-row">
-        
-        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="https://external-link"
-            title="">
-            
-            Privacy
-          </a>
-        </li>
-        
-      </ul>
-    </nav>
     
   
   <div class="flex items-center justify-between">

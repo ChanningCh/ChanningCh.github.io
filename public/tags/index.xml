@@ -9,44 +9,94 @@
     <managingEditor>chxqcn@outlook.com (LNmint)</managingEditor>
     <webMaster>chxqcn@outlook.com (LNmint)</webMaster>
     <copyright>© 2024 LNmint</copyright>
-    <lastBuildDate>Mon, 23 Dec 2024 10:43:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Dec 2024 22:08:30 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Note</title>
-      <link>http://localhost:1313/tags/note/</link>
+      <title>Sample</title>
+      <link>http://localhost:1313/tags/sample/</link>
+      <pubDate>Thu, 26 Dec 2024 22:08:30 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/sample/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Users</title>
+      <link>http://localhost:1313/tags/users/</link>
+      <pubDate>Thu, 26 Dec 2024 22:08:30 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/users/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ARM</title>
+      <link>http://localhost:1313/tags/arm/</link>
+      <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/arm/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>IC</title>
+      <link>http://localhost:1313/tags/ic/</link>
+      <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/ic/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>协议</title>
+      <link>http://localhost:1313/tags/%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/%E5%8D%8F%E8%AE%AE/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>BUS</title>
+      <link>http://localhost:1313/tags/bus/</link>
+      <pubDate>Tue, 24 Dec 2024 20:08:47 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/bus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>http://localhost:1313/tags/memory/</link>
       <pubDate>Mon, 23 Dec 2024 10:43:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:1313/tags/note/</guid>
+      <guid>http://localhost:1313/tags/memory/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Tech</title>
-      <link>http://localhost:1313/tags/tech/</link>
+      <title>接口</title>
+      <link>http://localhost:1313/tags/%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Mon, 23 Dec 2024 10:43:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:1313/tags/tech/</guid>
+      <guid>http://localhost:1313/tags/%E6%8E%A5%E5%8F%A3/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>ECC</title>
-      <link>http://localhost:1313/tags/ecc/</link>
+      <title>FPGA</title>
+      <link>http://localhost:1313/tags/fpga/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:1313/tags/ecc/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>FEC</title>
-      <link>http://localhost:1313/tags/fec/</link>
-      <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
-      <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:1313/tags/fec/</guid>
+      <guid>http://localhost:1313/tags/fpga/</guid>
       <description></description>
       
     </item>
@@ -82,21 +132,31 @@
     </item>
     
     <item>
-      <title>ChipScoPy</title>
-      <link>http://localhost:1313/tags/chipscopy/</link>
-      <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
+      <title>PCIe</title>
+      <link>http://localhost:1313/tags/pcie/</link>
+      <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:1313/tags/chipscopy/</guid>
+      <guid>http://localhost:1313/tags/pcie/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>FPGA</title>
-      <link>http://localhost:1313/tags/fpga/</link>
+      <title>SerDes</title>
+      <link>http://localhost:1313/tags/serdes/</link>
+      <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/tags/serdes/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Debug</title>
+      <link>http://localhost:1313/tags/debug/</link>
       <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:1313/tags/fpga/</guid>
+      <guid>http://localhost:1313/tags/debug/</guid>
       <description></description>
       
     </item>
