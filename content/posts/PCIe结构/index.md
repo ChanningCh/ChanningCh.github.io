@@ -1,8 +1,9 @@
 ---
 title: "PCIe结构"
-date: 2024-11-21 09:34:53+08:00
-description: 
-tags: ["IC", "PCIe", "SerDes", "接口"]
+date: 2024-11-21T09:34:53+08:00
+description: "PCIe简介"
+categories: ["IC"]
+tags: ["PCIe", "SerDes", "接口"]
 comment: true
 draft: false
 ---

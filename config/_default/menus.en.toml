@@ -21,52 +21,56 @@ pageRef = "tags"
 weight = 20
 
 [[main]]
-name = "Categories"
+name = "categories"
 pageRef = "categories"
 weight = 30
+# [[main]]
+# name = "Series"
+# pageRef = "Series"
+# weight = 30
 
-# Son of Categories
+# Son of categories
 [[main]]
-name = "IC/FPGA"
+name = "IC"
 pre = "microchip"
-parent = "Categories"
-pageRef = "categories"
-weight = 10
+parent = "categories"
+pageRef = "categories/IC"
+weight = 31
 
 [[main]]
-name = "RTL/Verilog/SV"
-pre = "git-alt"
-parent = "Categories"
-pageRef = "categories"
-weight = 20
-
-[[main]]
-name = "IP/OpenSource"
+name = "OpenSource"
 pre = "github"
-parent = "Categories"
-pageRef = "categories"
-weight = 30
-
-[[main]]
-name = "Hardware"
-pre = "tachograph-digital"
-parent = "Categories"
-pageRef = "categories"
-weight = 40
-
-[[main]]
-name = "Debug"
-pre = "bug"
-parent = "Categories"
-pageRef = "categories"
-weight = 50
+parent = "categories"
+pageRef = "categories/OpenSource"
+weight = 32
 
 [[main]]
 name = "Tools"
 pre = "wrench"
-parent = "Categories"
-pageRef = "categories"
-weight = 60
+parent = "categories"
+pageRef = "categories/Tools"
+weight = 33
+
+[[main]]
+name = "Hardware"
+pre = "tachograph-digital"
+parent = "categories"
+pageRef = "categories/Hardware"
+weight = 34
+
+[[main]]
+name = "Coding"
+pre = "git-alt"
+parent = "categories"
+pageRef = "categories/Coding"
+weight = 35
+
+[[main]]
+name = "Debug"
+pre = "bug"
+parent = "categories"
+pageRef = "categories/Debug"
+weight = 36
 
 # [[subnavigation]]
 # name = "An interesting topic"

@@ -1,9 +1,10 @@
 ---
 title: "JTAG接口协议"
 date: 2024-12-25T14:29:00+08:00
-tags: ["IC", "协议", "ARM"]
+categories: ["IC"]
+tags: ["协议", "ARM"]
 draft: false
-description: ""
+description: "JTAG接口协议"
 ---
 [https://blog.csdn.net/bukong123/article/details/134231895](https://blog.csdn.net/bukong123/article/details/134231895)
 

@@ -1,7 +1,8 @@
 ---
 title: "几种纠错算法"
-date: 2024-12-16 20:18:31+08:00
-description: 介绍几种常用的纠错算法ECC, LDPC, RAID, RS-FEC
+date: 2024-12-16T20:18:31+08:00
+description: "介绍几种常用的纠错算法ECC, LDPC, RAID, RS-FEC"
+categories: ["IC"]
 tags: ["算法", "纠错", "IC", "FPGA"]
 comment: true
 draft: false

@@ -2,7 +2,8 @@
 title: "Xiaomi Home Assistant折腾笔记"
 date: 2024-12-26T22:08:30+08:00
 draft: false
-tag: ["OpenSource", "IoT", "HomeAssistant"]
+categories: ["OpenSource"]
+tags: ["OpenSource", "IoT", "HomeAssistant"]
 description: "Xiaomi Home Assistant折腾笔记"
 ---
 ## Xiaomi Home Assistant是什么

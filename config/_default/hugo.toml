@@ -8,7 +8,7 @@ languageCode = "en"
 title = "LNmint's Blog"
 theme = "blowfish"
 
-pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+pluralizeListTitles = true # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
 summaryLength = 0
@@ -70,32 +70,30 @@ weight = 100
 
 [[related.indices]]
 name = "categories"
-weight = 100
+weight = 200
 
 [[related.indices]]
 name = "series"
-weight = 50
+weight = 300
 
 [[related.indices]]
 name = "authors"
-weight = 20
+weight = 400
 
 [[related.indices]]
 name = "date"
-weight = 10
+weight = 500
 
 [[related.indices]]
 applyFilter = false
-name = 'fragmentrefs'
-type = 'fragments'
-weight = 10
-
-disqusShortname = 'LNmint'
-
+name = "fragmentrefs"
+type = "fragments"
+weight = 600
 
 [privacy]
   [privacy.disqus]
-    disable = false
+    disable = true
+    disqusShortname = "LNmint"
   [privacy.googleAnalytics]
     disable = false
     respectDoNotTrack = false

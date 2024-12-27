@@ -1,13 +1,10 @@
 ---
 date: 2024-11-20T23:54:15+08:00
-description: 本文章介绍Xilinx ChipScoPy debug工具的使用.
-featured_image: "/images/chipscopy.png"
+description: "本文章介绍Xilinx ChipScoPy debug工具的使用."
+categories: ["Debug"]
 tags: ["FPGA", "Xilinx", "Debug"]
 title: "ChipScoPy使用"
-categories: FPGA
 ---
-# 🐍 ChipScoPy README
-
 ChipScoPy is an open-source project from Xilinx® that enables high-level control of Versal debug IP running in hardware.
 
 Using a simple Python API, developers can control and communicate with ChipScope® debug IP such as the Integrated Logic

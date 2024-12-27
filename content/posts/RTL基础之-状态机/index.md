@@ -1,7 +1,8 @@
 ---
 title: "关于状态机"
-date: 2024-12-11 23:23:37+08:00
-description: 状态机很简单, 写好确很难
+date: 2024-12-11T23:23:37+08:00
+description: "状态机很简单, 写好确很难"
+categories: ["Coding"]
 tags: ["Verilog"]
 comment: true
 draft: false
