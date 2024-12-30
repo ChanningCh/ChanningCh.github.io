@@ -3,7 +3,7 @@ title: "Ubuntu 24.04上搭建NAS"
 date: 2024-12-30T10:14:16+08:00
 description: "Ubuntu 24.04上搭建NAS"
 tags: ["Ubuntu", "NAS"]
-categories: ["TOOL"]
+categories: ["Tools"]
 comment: true
 draft: false
 ---
