@@ -5,7 +5,11 @@ description: "IPV6是什么"
 tags: ["IPV6", "以太网"]
 categories: ["IC"]
 comment: true
+<<<<<<< HEAD
 draft: true
+=======
+draft: false
+>>>>>>> f090bc0 (add post: build NAS with Ubuntu 24)
 ---
 可能打印:
 
