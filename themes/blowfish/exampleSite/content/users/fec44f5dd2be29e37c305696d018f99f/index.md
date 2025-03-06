@@ -1,8 +1,8 @@
 ---
-title: "ohdmire.github.io"
+                title: "ohdmire.github.io"
                 tags: [Personal site]
                 externalUrl: "https://ohdmire.github.io"
-                weight: 491
+                weight: 471
                 showDate: false
                 showAuthor: false
                 showReadingTime: false
@@ -10,4 +10,4 @@ title: "ohdmire.github.io"
                 showLikes: false
                 showViews: false
                 layoutBackgroundHeaderSpace: false
----
+                ---
