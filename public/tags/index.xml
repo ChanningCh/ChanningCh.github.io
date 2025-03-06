@@ -2,271 +2,271 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on LNmint&#39;s Blog</title>
-    <link>http://localhost:9774/tags/</link>
+    <link>https://channingch.github.io/tags/</link>
     <description>Recent content in Tags on LNmint&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>chxqcn@outlook.com (LNmint)</managingEditor>
     <webMaster>chxqcn@outlook.com (LNmint)</webMaster>
     <copyright>© 2025 LNmint</copyright>
-    <lastBuildDate>Mon, 03 Mar 2025 10:41:04 +0800</lastBuildDate><atom:link href="http://localhost:9774/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Mar 2025 10:41:04 +0800</lastBuildDate><atom:link href="https://channingch.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Sample</title>
-      <link>http://localhost:9774/tags/sample/</link>
+      <link>https://channingch.github.io/tags/sample/</link>
       <pubDate>Mon, 03 Mar 2025 10:41:04 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/sample/</guid>
+      <guid>https://channingch.github.io/tags/sample/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Users</title>
-      <link>http://localhost:9774/tags/users/</link>
+      <link>https://channingch.github.io/tags/users/</link>
       <pubDate>Mon, 03 Mar 2025 10:41:04 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/users/</guid>
+      <guid>https://channingch.github.io/tags/users/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Note</title>
-      <link>http://localhost:9774/tags/note/</link>
+      <link>https://channingch.github.io/tags/note/</link>
       <pubDate>Fri, 03 Jan 2025 13:08:13 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/note/</guid>
+      <guid>https://channingch.github.io/tags/note/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Tech</title>
-      <link>http://localhost:9774/tags/tech/</link>
+      <link>https://channingch.github.io/tags/tech/</link>
       <pubDate>Fri, 03 Jan 2025 13:08:13 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/tech/</guid>
+      <guid>https://channingch.github.io/tags/tech/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>IPv6</title>
-      <link>http://localhost:9774/tags/ipv6/</link>
+      <link>https://channingch.github.io/tags/ipv6/</link>
       <pubDate>Mon, 30 Dec 2024 13:43:42 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/ipv6/</guid>
+      <guid>https://channingch.github.io/tags/ipv6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>以太网</title>
-      <link>http://localhost:9774/tags/%E4%BB%A5%E5%A4%AA%E7%BD%91/</link>
+      <link>https://channingch.github.io/tags/%E4%BB%A5%E5%A4%AA%E7%BD%91/</link>
       <pubDate>Mon, 30 Dec 2024 13:43:42 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/%E4%BB%A5%E5%A4%AA%E7%BD%91/</guid>
+      <guid>https://channingch.github.io/tags/%E4%BB%A5%E5%A4%AA%E7%BD%91/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>NAS</title>
-      <link>http://localhost:9774/tags/nas/</link>
+      <link>https://channingch.github.io/tags/nas/</link>
       <pubDate>Mon, 30 Dec 2024 10:14:16 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/nas/</guid>
+      <guid>https://channingch.github.io/tags/nas/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:9774/tags/ubuntu/</link>
+      <link>https://channingch.github.io/tags/ubuntu/</link>
       <pubDate>Mon, 30 Dec 2024 10:14:16 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/ubuntu/</guid>
+      <guid>https://channingch.github.io/tags/ubuntu/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>HomeAssistant</title>
-      <link>http://localhost:9774/tags/homeassistant/</link>
+      <link>https://channingch.github.io/tags/homeassistant/</link>
       <pubDate>Thu, 26 Dec 2024 22:08:30 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/homeassistant/</guid>
+      <guid>https://channingch.github.io/tags/homeassistant/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>IoT</title>
-      <link>http://localhost:9774/tags/iot/</link>
+      <link>https://channingch.github.io/tags/iot/</link>
       <pubDate>Thu, 26 Dec 2024 22:08:30 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/iot/</guid>
+      <guid>https://channingch.github.io/tags/iot/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>OpenSource</title>
-      <link>http://localhost:9774/tags/opensource/</link>
+      <link>https://channingch.github.io/tags/opensource/</link>
       <pubDate>Thu, 26 Dec 2024 22:08:30 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/opensource/</guid>
+      <guid>https://channingch.github.io/tags/opensource/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ARM</title>
-      <link>http://localhost:9774/tags/arm/</link>
+      <link>https://channingch.github.io/tags/arm/</link>
       <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/arm/</guid>
+      <guid>https://channingch.github.io/tags/arm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>协议</title>
-      <link>http://localhost:9774/tags/%E5%8D%8F%E8%AE%AE/</link>
+      <link>https://channingch.github.io/tags/%E5%8D%8F%E8%AE%AE/</link>
       <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/%E5%8D%8F%E8%AE%AE/</guid>
+      <guid>https://channingch.github.io/tags/%E5%8D%8F%E8%AE%AE/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AXI</title>
-      <link>http://localhost:9774/tags/axi/</link>
+      <link>https://channingch.github.io/tags/axi/</link>
       <pubDate>Tue, 24 Dec 2024 20:08:47 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/axi/</guid>
+      <guid>https://channingch.github.io/tags/axi/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>BUS</title>
-      <link>http://localhost:9774/tags/bus/</link>
+      <link>https://channingch.github.io/tags/bus/</link>
       <pubDate>Tue, 24 Dec 2024 20:08:47 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/bus/</guid>
+      <guid>https://channingch.github.io/tags/bus/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Memory</title>
-      <link>http://localhost:9774/tags/memory/</link>
+      <link>https://channingch.github.io/tags/memory/</link>
       <pubDate>Mon, 23 Dec 2024 10:43:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/memory/</guid>
+      <guid>https://channingch.github.io/tags/memory/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>接口</title>
-      <link>http://localhost:9774/tags/%E6%8E%A5%E5%8F%A3/</link>
+      <link>https://channingch.github.io/tags/%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Mon, 23 Dec 2024 10:43:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/%E6%8E%A5%E5%8F%A3/</guid>
+      <guid>https://channingch.github.io/tags/%E6%8E%A5%E5%8F%A3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>FPGA</title>
-      <link>http://localhost:9774/tags/fpga/</link>
+      <link>https://channingch.github.io/tags/fpga/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/fpga/</guid>
+      <guid>https://channingch.github.io/tags/fpga/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>IC</title>
-      <link>http://localhost:9774/tags/ic/</link>
+      <link>https://channingch.github.io/tags/ic/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/ic/</guid>
+      <guid>https://channingch.github.io/tags/ic/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>算法</title>
-      <link>http://localhost:9774/tags/%E7%AE%97%E6%B3%95/</link>
+      <link>https://channingch.github.io/tags/%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://channingch.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>纠错</title>
-      <link>http://localhost:9774/tags/%E7%BA%A0%E9%94%99/</link>
+      <link>https://channingch.github.io/tags/%E7%BA%A0%E9%94%99/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/%E7%BA%A0%E9%94%99/</guid>
+      <guid>https://channingch.github.io/tags/%E7%BA%A0%E9%94%99/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Verilog</title>
-      <link>http://localhost:9774/tags/verilog/</link>
+      <link>https://channingch.github.io/tags/verilog/</link>
       <pubDate>Wed, 11 Dec 2024 23:23:37 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/verilog/</guid>
+      <guid>https://channingch.github.io/tags/verilog/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PCIe</title>
-      <link>http://localhost:9774/tags/pcie/</link>
+      <link>https://channingch.github.io/tags/pcie/</link>
       <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/pcie/</guid>
+      <guid>https://channingch.github.io/tags/pcie/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SerDes</title>
-      <link>http://localhost:9774/tags/serdes/</link>
+      <link>https://channingch.github.io/tags/serdes/</link>
       <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/serdes/</guid>
+      <guid>https://channingch.github.io/tags/serdes/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Debug</title>
-      <link>http://localhost:9774/tags/debug/</link>
+      <link>https://channingch.github.io/tags/debug/</link>
       <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/debug/</guid>
+      <guid>https://channingch.github.io/tags/debug/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Xilinx</title>
-      <link>http://localhost:9774/tags/xilinx/</link>
+      <link>https://channingch.github.io/tags/xilinx/</link>
       <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>http://localhost:9774/tags/xilinx/</guid>
+      <guid>https://channingch.github.io/tags/xilinx/</guid>
       <description></description>
       
     </item>
