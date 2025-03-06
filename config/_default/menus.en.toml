@@ -11,17 +11,17 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-name = "posts"
+name = "博客"
 pageRef = "posts"
 weight = 10
 
 [[main]]
-name = "tags"
+name = "标签"
 pageRef = "tags"
 weight = 20
 
 [[main]]
-name = "categories"
+name = "分类"
 pageRef = "categories"
 weight = 30
 # [[main]]
@@ -29,47 +29,47 @@ weight = 30
 # pageRef = "Series"
 # weight = 30
 
-# Son of categories
+# Son of 分类
 [[main]]
 name = "IC"
 pre = "microchip"
-parent = "categories"
-pageRef = "categories/IC"
+parent = "分类"
+pageRef = "分类/IC"
 weight = 31
 
 [[main]]
 name = "OpenSource"
 pre = "github"
-parent = "categories"
-pageRef = "categories/OpenSource"
+parent = "分类"
+pageRef = "分类/OpenSource"
 weight = 32
 
 [[main]]
 name = "Tools"
 pre = "wrench"
-parent = "categories"
-pageRef = "categories/Tools"
+parent = "分类"
+pageRef = "分类/Tools"
 weight = 33
 
 [[main]]
 name = "Hardware"
 pre = "tachograph-digital"
-parent = "categories"
-pageRef = "categories/Hardware"
+parent = "分类"
+pageRef = "分类/Hardware"
 weight = 34
 
 [[main]]
 name = "Coding"
 pre = "git-alt"
-parent = "categories"
-pageRef = "categories/Coding"
+parent = "分类"
+pageRef = "分类/Coding"
 weight = 35
 
 [[main]]
 name = "Debug"
 pre = "bug"
-parent = "categories"
-pageRef = "categories/Debug"
+parent = "分类"
+pageRef = "分类/Debug"
 weight = 36
 
 # [[subnavigation]]
@@ -80,7 +80,7 @@ weight = 36
 # [[subnavigation]]
 # name = "My Awesome Category"
 # pre = "github"
-# pageRef = "categories/awesome"
+# pageRef = "分类/awesome"
 # weight = 20
 
 
