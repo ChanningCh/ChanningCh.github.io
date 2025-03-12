@@ -2,6 +2,7 @@
 public/
 resources/
 exampleSite/resources/
+assets/jsconfig.json
 
 # Binaries for programs and plugins
 *.exe
@@ -21,6 +22,7 @@ exampleSite/resources/
 
 #others
 node_modules
+hugo_stats.json
 .hugo_build.lock
 
 # OS generated files
