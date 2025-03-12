@@ -66,7 +66,7 @@ git clone https://luajit.org/git/luajit.git
 为了更丝滑的使用NeoVim, 可以安装这些包:
 
 ```
-sudo apt -y install ripgrap fg-find nodejs npm
+sudo apt -y install ripgrap fg-find nodejs npm erlang
 ```
 
 ## 在Windows下使用
