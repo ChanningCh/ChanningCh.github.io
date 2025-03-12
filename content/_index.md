@@ -13,13 +13,13 @@ cardViewScreenWidth: false
 ---
 欢迎访问LNmint的博客
 
-本博客是作者随笔, 不做内容搬运工, 是工作经验的总结和提炼
+本博客旨在分享笔者自己工作和生活中有用和有趣点点滴滴, 内容包括:
+
+`IC`/`FPGA`/`Software`/`Hardware`
 
 ***Wisdom***谈不上, 希望给你带来 ***Knowledge***
 
-包括 `IC`/`FPGA`/`Software`/`Hardware`等的原创内容
-
-</BR>
+尊重原创, 不做内容搬运工!
 
 {{< alert >}}
 

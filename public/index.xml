@@ -2,141 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>欢迎访问LNmint的博客 on LNmint&#39;s Blog</title>
-    <link>https://channingch.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in 欢迎访问LNmint的博客 on LNmint&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>chxqcn@outlook.com (LNmint)</managingEditor>
     <webMaster>chxqcn@outlook.com (LNmint)</webMaster>
     <copyright>© 2025 LNmint</copyright>
-    <lastBuildDate>Mon, 03 Mar 2025 10:41:04 +0800</lastBuildDate><atom:link href="https://channingch.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Mar 2025 10:41:04 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NeoVim不折腾笔记</title>
+      <link>http://localhost:1313/posts/neovim%E4%B8%8D%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 03 Mar 2025 10:41:04 +0800</pubDate>
+      <author>chxqcn@outlook.com (LNmint)</author>
+      <guid>http://localhost:1313/posts/neovim%E4%B8%8D%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/neovim%E4%B8%8D%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/featured.png" />
+    </item>
     
     <item>
       <title>Rime全平台配置使用</title>
-      <link>https://channingch.github.io/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</link>
+      <link>http://localhost:1313/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 03 Jan 2025 13:08:13 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</guid>
+      <guid>http://localhost:1313/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/featured.png" />
     </item>
     
     <item>
       <title>IPv6是什么</title>
-      <link>https://channingch.github.io/posts/%E4%BD%BF%E7%94%A8ipv6%E8%BF%9E%E6%8E%A5ssh/</link>
+      <link>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8ipv6%E8%BF%9E%E6%8E%A5ssh/</link>
       <pubDate>Mon, 30 Dec 2024 13:43:42 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/%E4%BD%BF%E7%94%A8ipv6%E8%BF%9E%E6%8E%A5ssh/</guid>
+      <guid>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8ipv6%E8%BF%9E%E6%8E%A5ssh/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ubuntu 24.04上搭建NAS</title>
-      <link>https://channingch.github.io/posts/ubuntu-24.04%E4%B8%8A%E6%90%AD%E5%BB%BAnas/</link>
+      <link>http://localhost:1313/posts/ubuntu-24.04%E4%B8%8A%E6%90%AD%E5%BB%BAnas/</link>
       <pubDate>Mon, 30 Dec 2024 10:14:16 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/ubuntu-24.04%E4%B8%8A%E6%90%AD%E5%BB%BAnas/</guid>
+      <guid>http://localhost:1313/posts/ubuntu-24.04%E4%B8%8A%E6%90%AD%E5%BB%BAnas/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/ubuntu-24.04%E4%B8%8A%E6%90%AD%E5%BB%BAnas/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/ubuntu-24.04%E4%B8%8A%E6%90%AD%E5%BB%BAnas/featured.png" />
     </item>
     
     <item>
       <title>Xiaomi Home Assistant折腾笔记</title>
-      <link>https://channingch.github.io/posts/xiaomi-home-assistant%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:1313/posts/xiaomi-home-assistant%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 26 Dec 2024 22:08:30 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/xiaomi-home-assistant%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/posts/xiaomi-home-assistant%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/xiaomi-home-assistant%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/xiaomi-home-assistant%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/featured.png" />
     </item>
     
     <item>
       <title>JTAG接口协议</title>
-      <link>https://channingch.github.io/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</link>
+      <link>http://localhost:1313/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</link>
       <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</guid>
+      <guid>http://localhost:1313/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/featured.png" />
     </item>
     
     <item>
       <title>AXI总线</title>
-      <link>https://channingch.github.io/posts/axi%E6%80%BB%E7%BA%BF/</link>
+      <link>http://localhost:1313/posts/axi%E6%80%BB%E7%BA%BF/</link>
       <pubDate>Tue, 24 Dec 2024 20:08:47 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/axi%E6%80%BB%E7%BA%BF/</guid>
+      <guid>http://localhost:1313/posts/axi%E6%80%BB%E7%BA%BF/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/axi%E6%80%BB%E7%BA%BF/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/axi%E6%80%BB%E7%BA%BF/featured.png" />
     </item>
     
     <item>
       <title>从MC角度看看SDRAM的PHY接口-为什么要这样设计</title>
-      <link>https://channingch.github.io/posts/%E4%BB%8Emc%E8%A7%92%E5%BA%A6%E7%9C%8B%E7%9C%8Bsdram%E7%9A%84phy%E6%8E%A5%E5%8F%A3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E8%AE%BE%E8%AE%A1/</link>
+      <link>http://localhost:1313/posts/%E4%BB%8Emc%E8%A7%92%E5%BA%A6%E7%9C%8B%E7%9C%8Bsdram%E7%9A%84phy%E6%8E%A5%E5%8F%A3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Mon, 23 Dec 2024 10:43:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/%E4%BB%8Emc%E8%A7%92%E5%BA%A6%E7%9C%8B%E7%9C%8Bsdram%E7%9A%84phy%E6%8E%A5%E5%8F%A3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>http://localhost:1313/posts/%E4%BB%8Emc%E8%A7%92%E5%BA%A6%E7%9C%8B%E7%9C%8Bsdram%E7%9A%84phy%E6%8E%A5%E5%8F%A3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E8%AE%BE%E8%AE%A1/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/%E4%BB%8Emc%E8%A7%92%E5%BA%A6%E7%9C%8B%E7%9C%8Bsdram%E7%9A%84phy%E6%8E%A5%E5%8F%A3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E8%AE%BE%E8%AE%A1/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/%E4%BB%8Emc%E8%A7%92%E5%BA%A6%E7%9C%8B%E7%9C%8Bsdram%E7%9A%84phy%E6%8E%A5%E5%8F%A3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E8%AE%BE%E8%AE%A1/featured.png" />
     </item>
     
     <item>
       <title>几种纠错算法</title>
-      <link>https://channingch.github.io/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
+      <link>http://localhost:1313/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
+      <guid>http://localhost:1313/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/featured.png" />
     </item>
     
     <item>
       <title>关于状态机</title>
-      <link>https://channingch.github.io/posts/rtl%E5%9F%BA%E7%A1%80%E4%B9%8B-%E7%8A%B6%E6%80%81%E6%9C%BA/</link>
+      <link>http://localhost:1313/posts/rtl%E5%9F%BA%E7%A1%80%E4%B9%8B-%E7%8A%B6%E6%80%81%E6%9C%BA/</link>
       <pubDate>Wed, 11 Dec 2024 23:23:37 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/rtl%E5%9F%BA%E7%A1%80%E4%B9%8B-%E7%8A%B6%E6%80%81%E6%9C%BA/</guid>
+      <guid>http://localhost:1313/posts/rtl%E5%9F%BA%E7%A1%80%E4%B9%8B-%E7%8A%B6%E6%80%81%E6%9C%BA/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/rtl%E5%9F%BA%E7%A1%80%E4%B9%8B-%E7%8A%B6%E6%80%81%E6%9C%BA/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/rtl%E5%9F%BA%E7%A1%80%E4%B9%8B-%E7%8A%B6%E6%80%81%E6%9C%BA/featured.png" />
     </item>
     
     <item>
       <title>PCIe结构</title>
-      <link>https://channingch.github.io/posts/pcie%E7%BB%93%E6%9E%84/</link>
+      <link>http://localhost:1313/posts/pcie%E7%BB%93%E6%9E%84/</link>
       <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/pcie%E7%BB%93%E6%9E%84/</guid>
+      <guid>http://localhost:1313/posts/pcie%E7%BB%93%E6%9E%84/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/pcie%E7%BB%93%E6%9E%84/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/pcie%E7%BB%93%E6%9E%84/featured.png" />
     </item>
     
     <item>
       <title>ChipScoPy使用</title>
-      <link>https://channingch.github.io/posts/%E8%B0%83%E8%AF%95%E7%A5%9E%E5%99%A8chipscopy-%E4%BD%BF%E7%94%A8python%E5%AE%8C%E6%88%90%E8%B0%83%E8%AF%95/</link>
+      <link>http://localhost:1313/posts/%E8%B0%83%E8%AF%95%E7%A5%9E%E5%99%A8chipscopy-%E4%BD%BF%E7%94%A8python%E5%AE%8C%E6%88%90%E8%B0%83%E8%AF%95/</link>
       <pubDate>Wed, 20 Nov 2024 23:54:15 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/%E8%B0%83%E8%AF%95%E7%A5%9E%E5%99%A8chipscopy-%E4%BD%BF%E7%94%A8python%E5%AE%8C%E6%88%90%E8%B0%83%E8%AF%95/</guid>
+      <guid>http://localhost:1313/posts/%E8%B0%83%E8%AF%95%E7%A5%9E%E5%99%A8chipscopy-%E4%BD%BF%E7%94%A8python%E5%AE%8C%E6%88%90%E8%B0%83%E8%AF%95/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/%E8%B0%83%E8%AF%95%E7%A5%9E%E5%99%A8chipscopy-%E4%BD%BF%E7%94%A8python%E5%AE%8C%E6%88%90%E8%B0%83%E8%AF%95/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/%E8%B0%83%E8%AF%95%E7%A5%9E%E5%99%A8chipscopy-%E4%BD%BF%E7%94%A8python%E5%AE%8C%E6%88%90%E8%B0%83%E8%AF%95/featured.png" />
     </item>
     
     <item>
       <title></title>
-      <link>https://channingch.github.io/draft/1737773013880_nas/</link>
+      <link>http://localhost:1313/draft/1737773013880_nas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/draft/1737773013880_nas/</guid>
+      <guid>http://localhost:1313/draft/1737773013880_nas/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title></title>
-      <link>https://channingch.github.io/draft/nas/</link>
+      <link>http://localhost:1313/draft/nas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/draft/nas/</guid>
+      <guid>http://localhost:1313/draft/nas/</guid>
       <description></description>
       
     </item>

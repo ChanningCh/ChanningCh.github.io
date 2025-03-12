@@ -2,63 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IC on LNmint&#39;s Blog</title>
-    <link>https://channingch.github.io/categories/ic/</link>
+    <link>http://localhost:1313/categories/ic/</link>
     <description>Recent content in IC on LNmint&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>chxqcn@outlook.com (LNmint)</managingEditor>
     <webMaster>chxqcn@outlook.com (LNmint)</webMaster>
     <copyright>© 2025 LNmint</copyright>
-    <lastBuildDate>Fri, 03 Jan 2025 13:08:13 +0800</lastBuildDate><atom:link href="https://channingch.github.io/categories/ic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jan 2025 13:08:13 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/ic/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Rime全平台配置使用</title>
-      <link>https://channingch.github.io/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</link>
+      <link>http://localhost:1313/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 03 Jan 2025 13:08:13 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</guid>
+      <guid>http://localhost:1313/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/rime%E5%85%A8%E5%B9%B3%E5%8F%B0%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8/featured.png" />
     </item>
     
     <item>
       <title>JTAG接口协议</title>
-      <link>https://channingch.github.io/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</link>
+      <link>http://localhost:1313/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</link>
       <pubDate>Wed, 25 Dec 2024 14:29:00 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</guid>
+      <guid>http://localhost:1313/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jtag%E6%8E%A5%E5%8F%A3%E5%8D%8F%E8%AE%AE/featured.png" />
     </item>
     
     <item>
       <title>AXI总线</title>
-      <link>https://channingch.github.io/posts/axi%E6%80%BB%E7%BA%BF/</link>
+      <link>http://localhost:1313/posts/axi%E6%80%BB%E7%BA%BF/</link>
       <pubDate>Tue, 24 Dec 2024 20:08:47 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/axi%E6%80%BB%E7%BA%BF/</guid>
+      <guid>http://localhost:1313/posts/axi%E6%80%BB%E7%BA%BF/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/axi%E6%80%BB%E7%BA%BF/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/axi%E6%80%BB%E7%BA%BF/featured.png" />
     </item>
     
     <item>
       <title>几种纠错算法</title>
-      <link>https://channingch.github.io/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
+      <link>http://localhost:1313/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 16 Dec 2024 20:18:31 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
+      <guid>http://localhost:1313/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/%E5%87%A0%E7%A7%8D%E7%BA%A0%E9%94%99%E7%AE%97%E6%B3%95/featured.png" />
     </item>
     
     <item>
       <title>PCIe结构</title>
-      <link>https://channingch.github.io/posts/pcie%E7%BB%93%E6%9E%84/</link>
+      <link>http://localhost:1313/posts/pcie%E7%BB%93%E6%9E%84/</link>
       <pubDate>Thu, 21 Nov 2024 09:34:53 +0800</pubDate>
       <author>chxqcn@outlook.com (LNmint)</author>
-      <guid>https://channingch.github.io/posts/pcie%E7%BB%93%E6%9E%84/</guid>
+      <guid>http://localhost:1313/posts/pcie%E7%BB%93%E6%9E%84/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://channingch.github.io/posts/pcie%E7%BB%93%E6%9E%84/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/pcie%E7%BB%93%E6%9E%84/featured.png" />
     </item>
     
   </channel>
